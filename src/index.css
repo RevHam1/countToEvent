@@ -1,13 +1,104 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.event-img {
+  width: 175px;
+  height: 100px;
+  border-radius: 8px;
+  border: 3px solid white;
+  /* position: absolute; */
+  object-fit: cover;
+  filter: brightness(90%);
+  /* margin-left: -35px; */
+  cursor: pointer;
+}
+
+.event-img2 {
+  width: 100%;
+  /* height: 360px; */
+  border-radius: 8px;
+  border: 3px solid white;
+  /* position: absolute; */
+  object-fit: cover;
+  filter: brightness(90%);
+  /* margin-left: -35px; */
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: 30% 30% 30%; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  /* grid-auto-rows: 250px; */
+  /* grid-auto-rows: minmax(250px, auto); */
+  /* justify-items: stretch;
+  align-items: center; */
+  /* grid-gap: 1em; */
+}
+
+.event-price {
+  font-variant-numeric: lining-nums;
+}
+
+.event-info {
+  font-size: 14px;
+}
+
+.widen {
+  width: 150%;
+}
+
+.larger-font {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 40px;
+}
+
+.bottom-closer {
+  margin-bottom: 0px;
+}
+
+.top-further {
+  margin-top: 70px;
+}
+
+.margin-closer {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 8px;
+  background: #1565c0;
+  color: white;
+  padding: 7px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+button:active {
+  background-color: skyblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.note {
+  color: red !important;
+  width: 100px !important;
 }
